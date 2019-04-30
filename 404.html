@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SPA router</title>
+        <script type="text/javascript">
+            var pathname = encodeURIComponent(location.pathname.slice(1)),
+                search   = encodeURIComponent(location.search.slice(1)),
+                hash     = encodeURIComponent(location.hash.slice(1));
+
+            location.replace(
+                location.protocol + '//' + location.host +
+                (pathname ? '/?pathname=' + pathname : '') + 
+                (search ? '&search=' + search : '') + 
+                (hash ? '&hash=' + hash : '')
+            );
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

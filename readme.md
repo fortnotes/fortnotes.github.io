@@ -1,4 +1,4 @@
-FortNotes main site
+fortnotes.github.io
 ===================
 
-This repository contains public builds of official [FortNotes](https://fortnotes.com/) site.
+This repository contains builds of official [FortNotes](https://fortnotes.com/) site.
