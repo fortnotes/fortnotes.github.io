@@ -1,0 +1,24 @@
+<svg version="1.1" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+ <path d="m2 2v20h5v30h40v-30h5v-20h-16v10h-18v-10z" fill="#7c94c1" fill-rule="evenodd" marker-end=""/>
+ <g stroke-linejoin="round">
+  <path d="m12 22h-10v-20h16v10h18v-10h16v20h-10" fill="none" stroke="#627598" stroke-linecap="round" stroke-width="4"/>
+  <path d="m7 22v30h40v-30" fill="none" stroke="#627598" stroke-width="4"/>
+  <circle cx="27" cy="35" r="11" fill="#ccc" stroke="#eee" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+  <circle cx="27" cy="35" r="3" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-width="2" style="paint-order:normal"/>
+ </g>
+ <g fill="none" stroke-width="2">
+  <g stroke="#fff" stroke-linecap="square">
+   <path d="m27 25v4"/>
+   <path d="m34.071 27.929-2.8284 2.8284"/>
+   <path d="m37 35h-4" stroke-linejoin="round" style="paint-order:normal"/>
+   <g>
+    <path d="m34.071 42.071-2.8284-2.8284"/>
+    <path d="m27 45v-4"/>
+    <path d="m19.929 42.071 2.8284-2.8284"/>
+    <path d="m17 35h4"/>
+    <path d="m19.929 27.929 2.8284 2.8284"/>
+   </g>
+  </g>
+  <circle cx="27" cy="35" r="6" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" style="paint-order:normal"/>
+ </g>
+</svg>

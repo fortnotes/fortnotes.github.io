@@ -1,0 +1,35 @@
+.block {
+    box-sizing: border-box;
+    padding: $paddingNormal * 2;
+
+    &--header {
+        background-color: $colorBackgroundMain;
+    }
+
+    &--launcher {
+        background-color: $colorButton;
+    }
+
+    &--docker {
+        background-color: $colorBackgroundMain;
+    }
+
+    &--about {
+        background-color: $colorBackgroundShade;
+        border-bottom: 1px solid $colorBorder;
+    }
+
+    &--contacts {
+        background-color: $colorBackgroundMain;
+    }
+
+    &--footer {
+        background-color: $colorBackgroundShade;
+        border-top: 1px solid $colorBorder;
+    }
+
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,23 @@
+.button {
+    user-select: none;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: none;
+    background-color: $colorButton;
+    color: $colorBackgroundMain;
+
+    border-radius: $borderRadius;
+    padding: 0 $paddingNormal * 2;
+    line-height: $inputHeight;
+
+    &--inverted {
+        background-color: $colorBackgroundMain;
+        color: $colorButton;
+    }
+
+    &:hover {
+        background-color: $colorButtonHover;
+        color: $colorBackgroundMain;
+    }
+}

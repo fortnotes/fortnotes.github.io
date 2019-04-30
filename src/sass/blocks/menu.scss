@@ -1,0 +1,16 @@
+.menu {
+    display: none;
+
+    &__item {
+        padding: $paddingNormal;
+        border-bottom: none;
+    }
+
+    &__button {
+        margin-left: $paddingNormal;
+    }
+
+    @media (min-width: $mediaSmall) and (min-height: $mediaSmall) {
+        display: block;
+    }
+}

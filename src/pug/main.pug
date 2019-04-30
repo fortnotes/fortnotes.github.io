@@ -1,0 +1,87 @@
+doctype html
+html
+    head
+        title=FortNotes
+        meta(charset="utf-8")
+        meta(name="description" content=package.description)
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" href="img/favicon.png")
+        link(rel="stylesheet" href="main.css")
+
+    body
+        .block.block--header
+            .block__content.header
+                .logo FortNotes
+                .menu
+                    a.menu__item(href="#launcher") Home
+                    a.menu__item(href="#about") About
+                    a.menu__item(href="#docker") Deployment
+                    a.menu__item(href="#contacts") Contacts
+                    a.menu__button.button(href="https://app.fortnotes.com") Launch
+
+        .block.block--launcher#launcher
+            .block__content.launcher
+                .launcher__title Fort Knox for your notes
+                img(src="img/castle.svg")
+                .launcher__description.
+                    Encrypt all your sensitive data but keep it online for easy and quick access.
+                    Do not rely on any vendors. Deploy FortNotes on your own server.
+                    Organize and structure your data. Check source code. Be safe.
+                a.button.button--inverted(href="https://app.fortnotes.com") Launch
+
+        .block.block--about#about
+            .block__content.about
+                .about__info
+                    .about__title.about__title--config How it works
+                    .about__description
+                        | Your data is never sent to the server in plain format.
+                        | Everything is encrypted and decrypted right in the browser with
+                        |
+                        a(href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard") AES
+                        |
+                        | using 256 bits key derived from your password. No backdoors. No password recovery. So keep your password safe.
+                .about__info
+                    .about__title.about__title--flex Free and flexible
+                    .about__description.
+                        No tariff plans, no payments.
+                        All user have all the system features at full scale including full data customization.
+                        There are only general templates for the start, everything further you can change or reorganize according to your taste or necessity.
+
+        .block.block--docker#docker
+            .block__content.docker
+                .docker__info
+                    .docker__title Quick start with Docker
+                    .docker__description
+                        | You can create fully operational FortNotes instance on your computer or server with a single command.
+                        br
+                        | See more details in the repository
+                        |
+                        a(href="https://github.com/fortnotes/legacy/blob/master/docker/readme.md") documentation
+                        | .
+                pre.
+                    docker run \
+                        --detach \
+                        --publish 8080:8080 \
+                        --publish 8000:8000 \
+                        --restart always \
+                        --name fortnotes \
+                        fortnotes/legacy:apache
+
+        .block.block--contacts#contacts
+            .block__content.contacts
+                | Get the latest news and feel free to share your ideas and merge requests.
+                br
+                br
+                a(href="https://www.facebook.com/FortNotes/")
+                    img(src="img/facebook.svg")
+                a(href="https://fortnotes.blogspot.com/")
+                    img(src="img/blogger.svg")
+                a(href="https://t.me/fortnotes")
+                    img(src="img/telegram.svg")
+                a(href="https://github.com/fortnotes")
+                    img(src="img/github.svg")
+                a(href="https://hub.docker.com/r/fortnotes/legacy")
+                    img(src="img/docker.svg")
+
+        .block.block--footer
+            .block__content.footer © 2013-2019 FortNotes. All rights reserved.

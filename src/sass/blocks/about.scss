@@ -1,0 +1,51 @@
+.about {
+    &__info {
+        border-radius: $borderRadius;
+        flex: 1 1 0;
+        padding: $paddingNormal * 2;
+        border: 1px solid $colorBorder;
+        background-color: $colorBackgroundMain;
+        margin-bottom: $paddingNormal * 2;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__title {
+        background-size: 51px;
+        padding-left: 62px;
+        font-size: 180%;
+        line-height: 180%;
+
+        &--config {
+            background: url("img/configuration.svg") no-repeat;
+        }
+
+        &--flex {
+            background: url("img/flex.svg") no-repeat;
+        }
+    }
+
+    &__description {
+        font-size: 120%;
+        line-height: 120%;
+        margin: $paddingNormal 0;
+        text-align: left;
+    }
+
+    @media (min-width: $mediaNormal) and (min-height: $mediaNormal) {
+        display: flex;
+        justify-content: space-between;
+
+        &__info {
+            margin-bottom: 0;
+            margin-right: $paddingNormal * 2;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

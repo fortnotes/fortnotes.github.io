@@ -1,0 +1,27 @@
+@import "vars";
+@import "blocks/about";
+@import "blocks/block";
+@import "blocks/button";
+@import "blocks/contacts";
+@import "blocks/docker";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/launcher";
+@import "blocks/logo";
+@import "blocks/menu";
+
+html, body {
+    font: $font;
+    color: $colorTextMain;
+    background-color: $colorBackgroundShade;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $colorButton;
+    text-decoration: none;
+    border-bottom: 1px dashed $colorButton;
+}

@@ -1,0 +1,14 @@
+.contacts {
+    text-align: center;
+
+    a {
+        border-bottom: none;
+        display: inline-flex;
+    }
+
+    img {
+        height: 32px;
+        width: 32px;
+        padding: $paddingSmall;
+    }
+}

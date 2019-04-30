@@ -1,0 +1,30 @@
+.launcher {
+    text-align: center;
+
+    &__title {
+        color: $colorBackgroundMain;
+        font-size: 180%;
+        line-height: 180%;
+    }
+
+    &__description {
+        color: $colorBackgroundMain;
+        font-size: 120%;
+        line-height: 120%;
+        margin: $paddingNormal * 2 0;
+        text-align: left;
+    }
+
+    img {
+        min-height: 92px;
+        margin: $paddingNormal * 2;
+
+        @media (min-width: $mediaSmall) and (min-height: $mediaSmall) {
+            min-height: 184px;
+        }
+
+        @media (min-width: $mediaNormal) and (min-height: $mediaNormal) {
+            min-height: 276px;
+        }
+    }
+}
