@@ -1,7 +1,7 @@
 {
     "name": "fortnotes.github.io",
     "version": "1.0.0",
-    "description": "Main landing page.",
+    "description": "Online private information management platform.",
     "private": true,
     "author": {
         "name": "Stanislav Kalashnik",
