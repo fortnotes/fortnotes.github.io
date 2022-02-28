@@ -7,6 +7,7 @@
         "name": "Stanislav Kalashnik",
         "email": "darkpark.main@gmail.com"
     },
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "https://github.com/fortnotes/fortnotes.github.io.git"
@@ -18,13 +19,13 @@
         "start": "npm run develop"
     },
     "devDependencies": {
-        "runner": "^2.0.1",
-        "runner-generator-pug": "^1.0.1",
-        "runner-generator-repl": "^1.0.2",
-        "runner-generator-sass": "^1.0.1",
-        "runner-generator-static": "^1.1.0",
-        "runner-logger": "^1.0.1",
-        "runner-tools": "^1.2.1"
+        "runner": "^4.0.0",
+        "runner-generator-pug": "^2.0.0",
+        "runner-generator-repl": "^2.0.0",
+        "runner-generator-sass": "^3.0.0",
+        "runner-generator-static": "^2.0.0",
+        "runner-logger": "^2.0.0",
+        "runner-tools": "^2.0.0"
     },
     "license": "MIT"
 }

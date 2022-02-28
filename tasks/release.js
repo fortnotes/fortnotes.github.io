@@ -2,41 +2,46 @@
  * Release tasks
  */
 
-'use strict';
+import path from 'path';
+import runner from 'runner';
+import tools from 'runner-tools';
+import logger from 'runner-logger';
+import runnerGeneratorSass from 'runner-generator-sass';
+import runnerGeneratorRepl from 'runner-generator-repl';
+import runnerGeneratorStatic from 'runner-generator-static';
+import runnerGeneratorPug from 'runner-generator-pug';
 
-const
-    path    = require('path'),
-    runner  = require('runner'),
-    tools   = require('runner-tools'),
-    logger  = require('runner-logger'),
-    source  = 'src',
-    target  = path.join('..', 'master');
+
+const source  = 'src';
+const target  = path.join('..', 'master');
 
 
 Object.assign(
     runner.tasks,
 
-    require('runner-generator-pug')({
+    runnerGeneratorPug({
         source: path.join(source, 'pug', 'main.pug'),
         target: path.join(target, 'index.html'),
         variables: {
             develop: false,
-            package: require('../package')
+            package: {
+                description: 'Online private information management platform.'
+            }
         }
     }),
 
-    require('runner-generator-repl')({
+    runnerGeneratorRepl({
         runner: runner
     }),
 
-    require('runner-generator-sass')({
+    runnerGeneratorSass({
         file: path.join(source, 'sass', 'release.scss'),
         outFile: path.join(target, 'main.css'),
         outputStyle: 'compressed',
         sourceMap: path.join(target, 'main.css.map')
     }),
 
-    require('runner-generator-static')({
+    runnerGeneratorStatic({
         path: path.join(target),
         port: 9090
     })
